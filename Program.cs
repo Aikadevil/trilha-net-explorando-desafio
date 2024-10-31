@@ -1,5 +1,7 @@
 ﻿using System.Text;
-using DesafioProjetoHospedagem.Models;
+using DesafioProjetoHospedagem.Pessoa;
+using DesafioProjetoHospedagem.Suite;
+using DesafioProjetoHospedagem.Reserva;
 
 Console.OutputEncoding = Encoding.UTF8;
 
@@ -16,7 +18,7 @@ hospedes.Add(p2);
 Suite suite = new Suite(tipoSuite: "Premium", capacidade: 2, valorDiaria: 30);
 
 // Cria uma nova reserva, passando a suíte e os hóspedes
-Reserva reserva = new Reserva(diasReservados: 5);
+Reserva reserva = new Reserva(diasReservados: 9);
 reserva.CadastrarSuite(suite);
 reserva.CadastrarHospedes(hospedes);
 

@@ -1,5 +1,5 @@
-namespace DesafioProjetoHospedagem.Models
-{
+namespace DesafioProjetoHospedagem.Suite;
+
     public class Suite
     {
         public Suite() { }
@@ -15,4 +15,3 @@ namespace DesafioProjetoHospedagem.Models
         public int Capacidade { get; set; }
         public decimal ValorDiaria { get; set; }
     }
-}
